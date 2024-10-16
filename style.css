@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+*{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 22px;
+}
+
+@media(max-width:991px){
+    .sidebar{
+        background-color:rgb(75, 71, 64);
+    }
+
+    .offcanvas-body{
+        display: block;
+    }
+
+    .jumbotron{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .jumbotron h1{
+        color: white;
+    }
+    
+    .jumbotron p{
+        color: rgb(116, 110, 102);
+        font-size: 30px;
+    }
+    
+    .jumbotron a{
+        margin-top: 0px;
+    }
+    
+    .btn-primary{
+        padding: 10px 20px;
+        font-size: 22px;
+        background-color: white;
+        border-color: white;
+        color: rgb(54, 52, 50);
+    }
+    
+    .btn-primary:hover{
+        background-color: rgb(44, 43, 42);
+        border-color: rgb(27, 27, 26);
+    }
+
+    .btn-primary:focus, .btn-primary:active {
+        background-color: white !important; 
+        border-color: white !important;     
+        color: rgb(54, 52, 50) !important;  
+        outline: none !important;           
+        box-shadow: none !important;     
+    }
+    
+    
+}
+
+
+body{
+    background-color: rgb(41, 40, 39);
+    height: auto;
+    overflow-x: hidden;
+}
+
+/*Header*/
+
+.navbar{
+    position: relative;
+}
+
+.navbar-brand{
+    margin-top: 9px;
+    margin-left: 9px;
+}
+
+.navbar-brand, .offcanvas-title, .nav-link{
+    color: rgb(235, 208, 173);
+}
+
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+}
+
+/*Fim Header*/
+
+
+
+/*Hero Section*/
+@media (min-width: 992px) {
+    
+    .offcanvas-body{
+        margin-left: 350px;
+    }
+
+    .offcanvas-body{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .navbar-brand{
+        margin-top: 9px;
+        margin-left: 9px;
+    }
+    
+    .navbar-brand, .offcanvas-title, .nav-link{
+        color: rgb(235, 208, 173);
+    }
+
+    .jumbotron{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 0;
+    background-color: #333; /* Mude esta cor para o que desejar */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.jumbotron h1{
+    color: white;
+    font-size: 54px;
+    margin-left: 35px;
+}
+
+.jumbotron p{
+    color: rgb(116, 110, 102);
+    font-size: 30px;
+}
+
+.jumbotron a{
+    margin-top: 0px;
+}
+
+.btn-primary{
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: white;
+    border-color: white;
+    color: rgb(54, 52, 50);
+    text-decoration: none;
+    margin-left: 200px;
+}
+
+.btn-primary:hover{
+    background-color: rgb(44, 43, 42);
+    border-color: rgb(27, 27, 26);
+    text-decoration: none;
+}
+}
+
+.btn-primary:focus, .btn-primary:active {
+    background-color: white !important; 
+    border-color: rgb(255, 255, 255) !important;     
+    color: rgb(54, 52, 50) !important;  
+    outline: none !important;           
+    box-shadow: none !important;        
+}
+
+/*Fim Hero Section*/
+
+/*Carousel*/
+
+.carousel-inner img {
+    width: 100%;
+    height: auto; 
+    margin-top: 0;
+}
+
+/*Fim Carousel*/
+
+
+
+
+
+
+
+/*Section Sobre nós*/
+
+.section-padding{
+    padding: 100px 0;
+}
+
+
+
+/*Fim Section Sobre nós*/
+

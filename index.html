@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--JS-->
+    <script defer src="app.js"></script>
+</head>
+
+<body class="vh-100">
+
+    <header>
+
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand fs-4" href="#">Café Aroma</a>
+
+                <!-- Toggle Btn -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- SideBar -->
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <!-- SideBar Header -->
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Café Aroma</h5>
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <!-- SideBar Body -->
+                    <div class="offcanvas-body p-4 p-lg-0">
+                        <ul class="navbar-nav fs-5 flex-grow-1 pe-3">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre-nos">Sobre nós</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#menu">Menu</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Fim NavBar -->
+    </header>
+
+    <main>
+        <!-- Grid Container -->
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Jumbotron com Carousel dentro -->
+                <div class="col-lg-12">
+                    <div class="jumbotron d-flex justify-content-between align-items-center p-7">
+                        <div>
+                            <h1 class="display-4">Bem-vindo ao Café Aroma</h1>
+                            <p class="lead">Onde o aroma do café fresco encontra o seu paladar!</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+
+                        <!-- Carousel -->
+                        <div class="carousel-container" style="width: 50%;">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <img src="imgs/1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="imgs/2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs/3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Section Sobre nós -->
+    <section id="sobre-nos" class="about section-padding">
+        <div class="container">
+            <div class="row align items-center">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="img-sobre">
+                        <img src="imgs/4.jpg" alt="img-sobre" class="img-fluid">  
+                    </div>
+            </div>
+                <div class="col-lg-4 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="text-sobre">
+                        <h2>teste</h2>
+                        <p>paragrafo</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            <div>
+
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+
+</html>
